@@ -1,0 +1,84 @@
+site_name: SEO Deliverable Prompt Library
+site_description: Production-ready prompt library for end-to-end SEO strategy, implementation, and reporting deliverables.
+site_url: https://example.com/seo-prompt-library
+repo_name: seo_consultant_deliverable_prompts_mkdocs
+repo_url: https://example.com/seo_consultant_deliverable_prompts_mkdocs
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - toc.follow
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - search
+  - tags
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Introduction & Usage: 01-getting-started/introduction.md
+      - Prompt Customization Playbook: 01-getting-started/customization.md
+      - Deliverable Output Formats: 01-getting-started/deliverable-formats.md
+  - Discovery & Research:
+      - Initial Site Audit Prompts: 02-discovery-research/initial-site-audit.md
+      - Competitive Analysis Prompts: 02-discovery-research/competitive-analysis.md
+      - Keyword Research Prompts: 02-discovery-research/keyword-research.md
+  - Strategy & Planning:
+      - SEO Strategy Document Prompts: 03-strategy-planning/seo-strategy-documents.md
+      - Content Strategy Prompts: 03-strategy-planning/content-strategy.md
+  - Technical SEO:
+      - Technical Audit Deliverables: 04-technical-seo/technical-audit-deliverables.md
+  - On-Page Optimization:
+      - Page-Level Optimization Prompts: 05-on-page-optimization/page-level-optimization.md
+      - Content Optimization Prompts: 05-on-page-optimization/content-optimization.md
+  - Content Creation:
+      - Content Brief Generation Prompts: 06-content-creation/content-briefs.md
+      - Content Creation Prompts: 06-content-creation/content-creation-prompts.md
+  - Off-Page SEO:
+      - Link Building Strategy Prompts: 07-off-page-seo/link-building.md
+  - Local SEO:
+      - Local SEO Prompt Pack: 08-local-seo/local-seo-prompts.md
+  - Monitoring & Reporting:
+      - Reporting Prompts: 09-monitoring-reporting/reporting-prompts.md
+      - Optimization Prompts: 09-monitoring-reporting/optimization-prompts.md
+  - Specialized Prompts:
+      - Vertical-Specific SEO Prompts: 10-specialized/vertical-prompts.md
+  - Contribution:
+      - Contributing Guide: contributing.md
